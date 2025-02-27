@@ -4,7 +4,7 @@ Este projeto demonstra o uso de classes `Autor`, `Livro` e `Usuario` para gerenc
 
 ## Diagrama de Classes
 
-\`\`\`mermaid
+```mermaid
 classDiagram
     class Autor {
         - UUID id
@@ -46,4 +46,4 @@ classDiagram
     Autor "1" -- "*" Livro : possui
     Livro "1" -- "*" Autor : autor
     Livro "1" -- "1" GeneroLivro : genero
-\`\`\`
+```
