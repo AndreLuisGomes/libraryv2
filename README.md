@@ -34,16 +34,16 @@ classDiagram
         - String senha
         - List~String~ roles
     }
-    enum GeneroLivro {
-        FICCAO
-        FANTASIA
-        MISTERIO
-        ROMANCE
-        BIOGRAFIA
-        CIENCIA
+    class GeneroLivro {
+        <<enumeration>>
+        + FICCAO
+        + FANTASIA
+        + MISTERIO
+        + ROMANCE
+        + BIOGRAFIA
+        + CIENCIA
     }
 
     Autor "1" -- "*" Livro : possui
-    Livro "1" -- "*" Autor : autor
     Livro "1" -- "1" GeneroLivro : genero
 ```
